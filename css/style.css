@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f9fafc;
+  color: #333;
+}
+
+.header {
+  background-color: #1e90ff;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+.main-container section {
+  margin: 1.5rem 0;
+  width: 90%;
+  max-width: 600px;
+}
+
+.balance {
+  background: #ffffff;
+  border: 2px solid #1e90ff;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+}
+.balance h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #1e90ff;
+}
+.balance .balance-resultado {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+  color: #ff6f61;
+}
+
+.form-container {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+}
+.form-container h2 {
+  text-align: center;
+  color: #1e90ff;
+  margin-bottom: 1rem;
+}
+.form-container .form .form-group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.form-container .form .form-group label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.form-container .form .form-group .input {
+  padding: 0.5rem;
+  border: 1px solid #1e90ff;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.form-container .form .btn-submit {
+  width: 100%;
+  padding: 0.7rem;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-container .form .btn-submit:hover {
+  background-color: rgb(0, 118.56, 234);
+}
+
+.historial-container h2 {
+  text-align: center;
+  color: #1e90ff;
+}
+.historial-container .historial {
+  list-style: none;
+  padding: 0;
+}
+.historial-container .historial li {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.historial-container .historial li button {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.historial-container .historial li button:hover {
+  background-color: rgb(255, 64.5189873418, 46);
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1e90ff;
+  color: #ffffff;
+}
+.footer p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

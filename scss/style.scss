@@ -1,0 +1,159 @@
+// Variables para colores y fuentes
+$color-fondo: #f9fafc;
+$color-primario: #1e90ff;
+$color-secundario: #ff6f61;
+$color-texto: #333;
+$color-blanco: #ffffff;
+
+$fuente-principal: 'Arial', sans-serif;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $fuente-principal;
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.header {
+    background-color: $color-primario;
+    color: $color-blanco;
+    text-align: center;
+    padding: 1rem;
+    h1 {
+        margin: 0;
+        font-size: 2rem;
+    }
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+
+    section {
+        margin: 1.5rem 0;
+        width: 90%;
+        max-width: 600px;
+    }
+}
+
+.balance {
+    background: $color-blanco;
+    border: 2px solid $color-primario;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+
+    h2 {
+        margin: 0;
+        font-size: 1.5rem;
+        color: $color-primario;
+    }
+
+    .balance-resultado {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 0.5rem;
+        color: $color-secundario;
+    }
+}
+
+.form-container {
+    background: $color-blanco;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+
+    h2 {
+        text-align: center;
+        color: $color-primario;
+        margin-bottom: 1rem;
+    }
+
+    .form {
+        .form-group {
+            margin-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-weight: bold;
+                margin-bottom: 0.5rem;
+            }
+
+            .input {
+                padding: 0.5rem;
+                border: 1px solid $color-primario;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+        }
+
+        .btn-submit {
+            width: 100%;
+            padding: 0.7rem;
+            font-size: 1rem;
+            color: $color-blanco;
+            background-color: $color-primario;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: darken($color-primario, 10%);
+            }
+        }
+    }
+}
+
+.historial-container {
+    h2 {
+        text-align: center;
+        color: $color-primario;
+    }
+
+    .historial {
+        list-style: none;
+        padding: 0;
+
+        li {
+            background: $color-blanco;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button {
+                padding: 0.3rem 0.5rem;
+                font-size: 0.9rem;
+                color: $color-blanco;
+                background-color: $color-secundario;
+                border: none;
+                border-radius: 3px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: darken($color-secundario, 10%);
+                }
+            }
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: $color-primario;
+    color: $color-blanco;
+
+    p {
+        margin: 0;
+    }
+}

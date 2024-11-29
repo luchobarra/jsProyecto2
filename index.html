@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Cuentas Personales</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>💰 Gestor de Cuentas Personales</h1>
+    </header>
+    <main class="main-container">
+        <!-- Sección de Balance -->
+        <section class="balance">
+            <h2>Balance Actual</h2>
+            <div id="resultado" class="balance-resultado">$0.00</div>
+        </section>
+
+        <!-- Formulario de transacciones -->
+        <section class="form-container">
+            <h2>Registrar Nueva Transacción</h2>
+            <form id="transaccionForm" class="form">
+                <div class="form-group">
+                    <label for="tipo">Tipo de transacción:</label>
+                    <select id="tipo" name="tipo" class="input">
+                        <option value="ingreso">Ingreso</option>
+                        <option value="gasto">Gasto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="monto">Monto:</label>
+                    <input type="number" id="monto" name="monto" placeholder="Ej: 500" class="input" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcion">Descripción:</label>
+                    <input type="text" id="descripcion" name="descripcion" placeholder="Ej: Pago de renta" class="input" required>
+                </div>
+                <button type="submit" class="btn btn-submit">Agregar Transacción</button>
+            </form>
+        </section>
+
+        <!-- Historial de transacciones -->
+        <section class="historial-container">
+            <h2>Historial de Transacciones</h2>
+            <ul id="historial" class="historial"></ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <p>Mantene tus cuentas organizadas de forma rapida y sencilla</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
