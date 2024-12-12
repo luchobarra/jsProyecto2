@@ -12,9 +12,28 @@ body {
   text-align: center;
   padding: 1rem;
 }
-.header h1 {
-  margin: 0;
-  font-size: 2rem;
+.header .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .navbar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .navbar .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  padding: 0;
+}
+.header .navbar .nav-links li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+}
+.header .navbar .nav-links li a:hover {
+  text-decoration: underline;
 }
 
 .main-container {
@@ -46,6 +65,24 @@ body {
   font-weight: bold;
   margin-top: 0.5rem;
   color: #ff6f61;
+}
+.balance .estadisticas {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.balance .estadisticas .estadistica {
+  text-align: center;
+}
+.balance .estadisticas .estadistica span {
+  display: block;
+  font-size: 1.2rem;
+}
+.balance .estadisticas .estadistica #total-ingresos {
+  color: green;
+}
+.balance .estadisticas .estadistica #total-gastos {
+  color: red;
 }
 
 .form-container {
