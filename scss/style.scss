@@ -1,7 +1,7 @@
 // Variables para colores y fuentes
-$color-fondo: #f9fafc; 
-$color-primario: #1e90ff;
-$color-secundario: #ff6f61;
+$color-fondo: rgba(177, 202, 224, 0.445); 
+$color-primario: rgb(41, 95, 152);
+$color-secundario: rgb(231, 41, 41);
 $color-texto: #333;
 $color-blanco: #ffffff;
 
@@ -82,7 +82,7 @@ body {
         font-size: 2rem;
         font-weight: bold;
         margin-top: 0.5rem;
-        color: $color-secundario;
+        color: $color-texto;
     }
 
     .estadisticas {
@@ -99,11 +99,11 @@ body {
             }
 
             #total-ingresos {
-                color: green;
+                color: rgb(52, 121, 40);
             }
 
             #total-gastos {
-                color: red;
+                color: rgb(231, 41, 41);
             }
         }
     }
@@ -112,6 +112,7 @@ body {
 .form-container {
     background: $color-blanco;
     border-radius: 10px;
+    border: 2px solid $color-primario;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 1.5rem;
 
@@ -159,6 +160,11 @@ body {
 }
 
 .historial-container {
+    padding: 1.5rem;
+    border: 2px solid $color-primario;
+    border-radius: 10px;
+    background: $color-blanco;
+   
     h2 {
         text-align: center;
         color: $color-primario;
@@ -169,8 +175,8 @@ body {
         padding: 0;
 
         li {
-            background: $color-blanco;
-            border: 1px solid #ddd;
+            background: $color-fondo;
+            border: 1px solid $color-primario;
             border-radius: 5px;
             padding: 0.5rem;
             margin-bottom: 0.5rem;

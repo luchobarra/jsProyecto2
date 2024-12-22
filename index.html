@@ -12,9 +12,9 @@
         <nav class="navbar">
             <h1 class="logo">💰 Gestor de Cuentas</h1>
             <ul class="nav-links">
-                <li><a href="#balance">Balance</a></li>
-                <li><a href="#form">Nueva Transacción</a></li>
-                <li><a href="#historial">Historial</a></li>
+                <li><a href="#balance"><i class="fas fa-chart-line"></i> Balance</a></li>
+                <li><a href="#form"><i class="fas fa-plus-circle"></i> Nueva Transacción</a></li>
+                <li><a href="#historial"><i class="fas fa-history"></i> Historial</a></li>
             </ul>
         </nav>
     </header>
@@ -39,10 +39,10 @@
         <!-- Formulario de transacciones -->
         <section id="form" class="form-container">
             <h2>Registrar Nueva Transacción</h2>
-            <form id="transaccionForm" class="form">
+            <form id="transaccionForm" class="form" aria-label="Formulario para nueva transacción">
                 <div class="form-group">
                     <label for="tipo">Tipo de transacción:</label>
-                    <select id="tipo" name="tipo" class="input">
+                    <select id="tipo" name="tipo" class="input" required>
                         <option value="ingreso">Ingreso</option>
                         <option value="gasto">Gasto</option>
                     </select>
@@ -55,7 +55,7 @@
                     <label for="descripcion">Descripción:</label>
                     <input type="text" id="descripcion" name="descripcion" placeholder="Ej: Pago de renta" class="input" required>
                 </div>
-                <button type="submit" class="btn btn-submit">Agregar Transacción</button>
+                <button type="submit" class="btn btn-submit"><i class="fas fa-check"></i> Agregar Transacción</button>
             </form>
         </section>
 

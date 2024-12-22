@@ -1,0 +1,16 @@
+{
+"transacciones": [
+    {
+        "tipo": "ingreso",
+        "monto": 1000,
+        "descripcion": "Salario",
+        "fecha": "2024-12-20"
+    },
+    {
+        "tipo": "gasto",
+        "monto": 200,
+        "descripcion": "Renta",
+        "fecha": "2024-12-21"
+    }
+    ]
+}

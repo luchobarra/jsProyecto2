@@ -2,12 +2,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Arial", sans-serif;
-  background-color: #f9fafc;
+  background-color: rgba(177, 202, 224, 0.445);
   color: #333;
 }
 
 .header {
-  background-color: #1e90ff;
+  background-color: rgb(41, 95, 152);
   color: #ffffff;
   text-align: center;
   padding: 1rem;
@@ -50,7 +50,7 @@ body {
 
 .balance {
   background: #ffffff;
-  border: 2px solid #1e90ff;
+  border: 2px solid rgb(41, 95, 152);
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -58,13 +58,13 @@ body {
 .balance h2 {
   margin: 0;
   font-size: 1.5rem;
-  color: #1e90ff;
+  color: rgb(41, 95, 152);
 }
 .balance .balance-resultado {
   font-size: 2rem;
   font-weight: bold;
   margin-top: 0.5rem;
-  color: #ff6f61;
+  color: #333;
 }
 .balance .estadisticas {
   display: flex;
@@ -79,21 +79,22 @@ body {
   font-size: 1.2rem;
 }
 .balance .estadisticas .estadistica #total-ingresos {
-  color: green;
+  color: rgb(52, 121, 40);
 }
 .balance .estadisticas .estadistica #total-gastos {
-  color: red;
+  color: rgb(231, 41, 41);
 }
 
 .form-container {
   background: #ffffff;
   border-radius: 10px;
+  border: 2px solid rgb(41, 95, 152);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
 }
 .form-container h2 {
   text-align: center;
-  color: #1e90ff;
+  color: rgb(41, 95, 152);
   margin-bottom: 1rem;
 }
 .form-container .form .form-group {
@@ -107,7 +108,7 @@ body {
 }
 .form-container .form .form-group .input {
   padding: 0.5rem;
-  border: 1px solid #1e90ff;
+  border: 1px solid rgb(41, 95, 152);
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -116,27 +117,33 @@ body {
   padding: 0.7rem;
   font-size: 1rem;
   color: #ffffff;
-  background-color: #1e90ff;
+  background-color: rgb(41, 95, 152);
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .form-container .form .btn-submit:hover {
-  background-color: rgb(0, 118.56, 234);
+  background-color: rgb(30.1658031088, 69.896373057, 111.8341968912);
 }
 
+.historial-container {
+  padding: 1.5rem;
+  border: 2px solid rgb(41, 95, 152);
+  border-radius: 10px;
+  background: #ffffff;
+}
 .historial-container h2 {
   text-align: center;
-  color: #1e90ff;
+  color: rgb(41, 95, 152);
 }
 .historial-container .historial {
   list-style: none;
   padding: 0;
 }
 .historial-container .historial li {
-  background: #ffffff;
-  border: 1px solid #ddd;
+  background: rgba(177, 202, 224, 0.445);
+  border: 1px solid rgb(41, 95, 152);
   border-radius: 5px;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
@@ -148,20 +155,20 @@ body {
   padding: 0.3rem 0.5rem;
   font-size: 0.9rem;
   color: #ffffff;
-  background-color: #ff6f61;
+  background-color: rgb(231, 41, 41);
   border: none;
   border-radius: 3px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .historial-container .historial li button:hover {
-  background-color: rgb(255, 64.5189873418, 46);
+  background-color: rgb(198.7142857143, 22.2857142857, 22.2857142857);
 }
 
 .footer {
   text-align: center;
   padding: 1rem;
-  background-color: #1e90ff;
+  background-color: rgb(41, 95, 152);
   color: #ffffff;
 }
 .footer p {
